@@ -1,0 +1,6 @@
+# Placeholder sample file
+# Replace this with a real downloaded CSV from OpenDataPA or WPRDC
+id,name,value,date
+1,Example A,100,2026-01-01
+2,Example B,,2026-01-02
+3,Example A,100,2026-01-01

@@ -1,0 +1,8 @@
+pandas>=2.0.0
+polars>=0.20.0
+pyarrow>=14.0.0
+great-expectations>=0.18.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+# Optional for Spark later
+# pyspark>=3.5.0
