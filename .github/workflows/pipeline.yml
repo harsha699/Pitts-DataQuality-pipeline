@@ -24,9 +24,12 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run pipeline
-        run: python src/pipeline.py --dataset sample
+        run: python src/pipeline.py --dataset allegheny-salaries
 
-      # TODO: Add step to upload archive/ to Cloudflare R2 or other storage
-      # using secrets (R2_ACCESS_KEY, R2_SECRET_KEY, R2_BUCKET, R2_ENDPOINT)
-      - name: List archive output
-        run: ls -la archive/ || echo "No archive yet"
+      - name: Upload archive as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-quality-archive-${{ github.run_id }}
+          path: archive/
+          retention-days: 90
+          if-no-files-found: warn
