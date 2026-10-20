@@ -8,3 +8,4 @@ archive/*/
 *.log
 .DS_Store
 .venv/
+data/raw/
