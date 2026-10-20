@@ -7,3 +7,4 @@ archive/*/
 *.parquet
 *.log
 .DS_Store
+.venv/
